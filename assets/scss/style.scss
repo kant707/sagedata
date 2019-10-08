@@ -1,9 +1,14 @@
 @import "partials/variables";
-@import "partials/spacing-helper";
 @import "partials/mixins";
+@import "partials/gutters";
 
 @import "bootstrap/bootstrap-reboot";
 @import "bootstrap/bootstrap-grid";
+@import "bootstrap/images";
 @import "partials/global";
 
+@import "../slick/slick";
+@import "../slick/slick-theme";
 @import "pages/home";
+
+

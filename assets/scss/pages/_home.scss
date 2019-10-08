@@ -1,0 +1,42 @@
+.top-notification {
+  background: #f5c524;
+  font-size: 12px;
+  color: #191515;
+  position: relative;
+
+  .top-notification-link {
+    color: #cb0808;
+  }
+  .top-notification-close {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    padding: 5px;
+    z-index: 2;
+  }
+}
+
+.offer-row {
+  border-top: 2px dashed $grey1;
+  border-bottom: 2px dashed $grey1;
+}
+
+.sage-accelerate {
+
+  .heading {
+    border-bottom: 5px solid #c4122f;;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.6;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+  }
+}
+
+
+
+
