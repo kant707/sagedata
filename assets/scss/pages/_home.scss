@@ -255,9 +255,18 @@
   }
 
   @media (max-width: 575px) {
+    .main-footer {
+      padding-bottom: 20px;
+    }
     .footer-col-inner {
       min-height: 0;
     }
+  }
+}
+
+@media (max-width: 575px) {
+  .main-footer {
+    padding-bottom: 20px;
   }
 }
 
