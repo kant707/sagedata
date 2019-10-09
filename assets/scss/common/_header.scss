@@ -1,0 +1,80 @@
+header {
+  .top-notification {
+    background: $yellow;
+    font-size: 12px;
+    color: $regular-text;
+    position: relative;
+
+    .top-notification-link {
+      color: $red;
+    }
+
+    .top-notification-close {
+      background: none;
+      border: 0;
+      cursor: pointer;
+      position: absolute;
+      top: -5px;
+      right: 15px;
+      padding: 5px;
+      z-index: 2;
+    }
+  }
+
+  .top-menu {
+    font-size: 16px;
+
+    a {
+      color: $regular-text;
+    }
+
+    .tm-right {
+      sup {
+        color: $red-light;
+      }
+
+      span {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .navbar-brand {
+    width: 217px;
+  }
+
+  .form-surface {
+    max-width: 628.9px;
+
+    form {
+      height: 50px;
+      border-radius: 34px;
+      border: solid 1px $navy-blue;
+      background-color: $white;
+      font-size: 19px;
+    }
+
+    .form-control {
+      opacity: 0;
+
+    }
+  }
+
+  .help-search {
+    color: $navy-blue;
+    font-size: 20px;
+  }
+
+  .bottom-menu {
+    border-top: 1px dashed $grey-cc;
+    border-bottom: 1px dashed $grey-cc;
+
+    a {
+      font-size: 15px;
+      color: $black;
+    }
+  }
+
+}
