@@ -43,9 +43,11 @@
         margin-left: 0;
       }
     }
+
     .icon-wrap {
       min-height: 38px;
     }
+
     .icon-text {
       font-size: 11px;
       letter-spacing: 0.55px;
@@ -69,11 +71,13 @@
         margin-top: 0;
       }
     }
+
     .item-link {
       color: inherit;
       display: inline-block;
     }
   }
+
   .subscribe-form {
     margin-right: 30px;
     position: relative;
@@ -103,6 +107,7 @@
         outline: 0;
       }
     }
+
     .submit-btn {
       border: 0;
       border-radius: 0 2px 2px 0;
@@ -115,10 +120,12 @@
       padding: 6px 18px;
     }
   }
+
   .social-icon-list {
     .list-item {
       margin-right: 15px;
     }
+
     .item-link {
       display: inline-block;
     }

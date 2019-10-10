@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="33.561" height="48.289" viewBox="0 0 33.561 48.289"><g data-name="Group 148" opacity=".304"><path d="M32.525 43.639a2.568 2.568 0 01-3.043 4.138L1 26.233a2.673 2.673 0 01-.487-3.652c.122-.243.365-.365.487-.487L29.482.55a2.52 2.52 0 013.043 4.017l-25.683 19.6z" data-name="Path 24" fill="#bbbaba"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="33.561" height="48.289" viewBox="0 0 33.561 48.289">
+    <g data-name="Group 148" opacity=".304">
+        <path d="M32.525 43.639a2.568 2.568 0 01-3.043 4.138L1 26.233a2.673 2.673 0 01-.487-3.652c.122-.243.365-.365.487-.487L29.482.55a2.52 2.52 0 013.043 4.017l-25.683 19.6z"
+              data-name="Path 24" fill="#bbbaba"/>
+    </g>
+</svg>

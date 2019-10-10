@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41.071" height="51.767" viewBox="0 0 41.071 51.767">
+    <defs>
+        <style>
+            .cls-1{fill:#e1e2ea}.cls-2{fill:none}
+        </style>
+    </defs>
+    <g id="baseline-search-24px">
+        <path id="Path_10"
+              d="M22.162 19.863h-1.211l-.429-.414a9.979 9.979 0 1 0-1.073 1.073l.414.429v1.211l7.665 7.649 2.284-2.284zm-9.2 0a6.9 6.9 0 1 1 6.9-6.9 6.889 6.889 0 0 1-6.898 6.9z"
+              class="cls-1" data-name="Path 10" transform="translate(3.571 8.5)"/>
+        <path id="Path_11" d="M0 0h41.071v51.767H0z" class="cls-2" data-name="Path 11"/>
+    </g>
+</svg>
