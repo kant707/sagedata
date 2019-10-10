@@ -20,7 +20,9 @@ header {
       z-index: 2;
     }
   }
-
+  .sup {
+    color: $red-light;
+  }
   .top-menu {
     font-size: 16px;
 
@@ -29,9 +31,6 @@ header {
     }
 
     .tm-right {
-      sup {
-        color: $red-light;
-      }
 
       span {
         &:last-child {
@@ -41,23 +40,57 @@ header {
     }
   }
 
+  .header-banner {
+    background: url("../images/header_promotion.jpg") no-repeat center;
+    height: 27px;
+    background-size: contain;
+    @media (min-width: 992px) {
+      height: 134px;
+
+    }
+  }
+
   .navbar-brand {
-    width: 217px;
+    width: 75px;
+    @media (min-width: 992px) {
+      width: 217px;
+    }
+
+    @media (min-width: 768px) {
+      width: 150px;
+    }
+
+  }
+
+  .search-icon {
+    max-height: 25px;
+    @media (min-width: 992px) {
+      max-height: 40px;
+
+    }
+
   }
 
   .form-surface {
-    max-width: 628.9px;
+    @media (min-width: 992px) {
+      max-width: 628.9px;
+    }
 
     form {
-      height: 45px;
-      border-radius: 34px;
       border: solid 1px $navy-blue;
       background-color: $white;
-      font-size: 19px;
+      height: 35px;
+      border-radius: 24px;
+      font-size: 16px;
 
-      img {
-        max-height: 40px;
+      @media (min-width: 992px) {
+        height: 45px;
+        border-radius: 34px;
+        font-size: 19px;
+
       }
+
+
     }
 
     .form-control {
@@ -67,12 +100,40 @@ header {
 
   }
 
+  .icon-row {
+    img {
+      max-width: 40px;
+    }
+    @media (max-width: 576px) {
+      border-top: 1px dashed $grey-cc;
+    }
+  }
+
   .help-search {
     color: $navy-blue;
-    font-size: 20px;
+    font-size: 14px;
+    @media (min-width: 992px) {
+      font-size: 20px;
+    }
+
 
     img {
       max-height: 20px;
+    }
+  }
+
+  .custom-pos {
+    @media (max-width: 576px) {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      background: $white;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 55px;
+      padding: 10px 0;
+      box-shadow: 0px 5px 5px 0 $shadow;
     }
   }
 
