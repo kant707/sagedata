@@ -1,17 +1,22 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/gutters";
+@import "partials/alignments";
+@import "partials/global";
 
 @import "bootstrap/bootstrap-reboot";
 @import "bootstrap/bootstrap-grid";
 @import "bootstrap/utilities";
 @import "bootstrap/media";
 @import "bootstrap/images";
-@import "partials/global";
+@import "bootstrap/navbar";
+@import "bootstrap/forms";
+
 
 @import "../slick/slick";
 @import "../slick/slick-theme";
 @import "common/footer";
+@import "common/header";
 @import "pages/home";
 
 
