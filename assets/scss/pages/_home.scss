@@ -1,9 +1,15 @@
 
 
 
-.offer-row {
+.top-deals {
   border-top: 2px dashed $grey1;
   border-bottom: 2px dashed $grey1;
+
+  @media (max-width: 420px) {
+    .img-fluid {
+      max-width: 260px;
+    }
+  }
 }
 
 .top-books {
