@@ -49,22 +49,31 @@ header {
     max-width: 628.9px;
 
     form {
-      height: 50px;
+      height: 45px;
       border-radius: 34px;
       border: solid 1px $navy-blue;
       background-color: $white;
       font-size: 19px;
+
+      img {
+        max-height: 40px;
+      }
     }
 
     .form-control {
       opacity: 0;
-
     }
+
+
   }
 
   .help-search {
     color: $navy-blue;
     font-size: 20px;
+
+    img {
+      max-height: 20px;
+    }
   }
 
   .bottom-menu {
