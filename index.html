@@ -11,7 +11,7 @@
 <body>
   <!-- Top Notification bar -->
   <div class="fluid-container ptb15 top-notification">
-    <div class="container pos-relative">
+    <div class="container position-relative">
       <div class="pr25">
         Have you seen SAGE books yet? We are now available in select bookstores across the country! Visit us at these bookstores and start your journey to success.
         <a href="#" class="top-notification-link">Click here for a list of bookstores</a>
@@ -44,17 +44,17 @@
   </div><!-- END Home page main carousel -->
 
   <!-- Top Deals -->
-  <section class="container-fluid offer-row ptb20">
+  <section class="container-fluid pt20 top-deals">
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <img class="img-fluid" src="assets/images/deals_1.jpg" />
+        <div class="col-sm text-center">
+          <img class="img-fluid mb20" src="assets/images/deals_1.jpg" />
         </div>
-        <div class="col-sm">
-          <img class="img-fluid" src="assets/images/deals_2.jpg" />
+        <div class="col-sm text-center">
+          <img class="img-fluid mb20" src="assets/images/deals_2.jpg" />
         </div>
-        <div class="col-sm">
-          <img class="img-fluid" src="assets/images/deals_3.jpg" />
+        <div class="col-sm text-center">
+          <img class="img-fluid mb20" src="assets/images/deals_3.jpg" />
         </div>
       </div>
     </div>
@@ -98,6 +98,7 @@
     </div>
   </section><!-- END Top Books -->
 
+  <!-- Sage Accelerate -->
   <section class="container sage-accelerate">
     <div class="row">
       <div class="col-sm col-sm-12 col-md-6 col-lg-7 sage-accelerate-inner">
@@ -110,7 +111,7 @@
             <a href="#" class="link">show more</a>
           </div>
 
-          <ul class="list-unstyled article-list ">
+          <ul class="list-unstyled article-list">
             <li class="list-item">
               <div class="media">
                 <a href="#" class="mr20 img-link">
@@ -173,7 +174,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><!-- END Sage Accelerate -->
 
   <!-- Main footer -->
   <footer class="container-fluid main-footer">
@@ -276,8 +277,13 @@
             </h5>
             <div class="pt5">
               <form action="" class="subscribe-form mb20">
-                <input type="email" class="email" placeholder="your email id">
-                <button type="submit" class="submit-btn">subscribe</button>
+                <div class="field-wrap error">
+                  <div class="position-relative">
+                    <input type="email" class="email" placeholder="your email id">
+                    <button type="submit" class="submit-btn">subscribe</button>
+                  </div>
+                  <p class="input-error">Invalid email address</p>
+                </div>
               </form>
             </div>
           </div>
