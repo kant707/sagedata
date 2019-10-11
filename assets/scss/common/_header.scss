@@ -20,9 +20,11 @@
       z-index: 2;
     }
   }
+
   .sup {
     color: $red-light;
   }
+
   .top-menu {
     font-size: 16px;
 
@@ -44,9 +46,9 @@
     background: url("../images/header_promotion.jpg") no-repeat center;
     height: 27px;
     background-size: contain;
-    @media (min-width: 992px) {
+    @media (min-width: 991px) {
       height: 134px;
-
+      display: none;
     }
   }
 
@@ -87,17 +89,12 @@
         height: 45px;
         border-radius: 34px;
         font-size: 19px;
-
       }
-
-
     }
 
     .form-control {
       opacity: 0;
     }
-
-
   }
 
   .icon-row {
@@ -150,5 +147,4 @@
       color: $black;
     }
   }
-
 }
