@@ -3,7 +3,16 @@
 @import "partials/gutters";  ;
 @import "partials/global";
 
-@import "bootstrap/*";
+@import "bootstrap/bootstrap-reboot";
+@import "bootstrap/bootstrap-grid";
+@import "bootstrap/utilities";
+@import "bootstrap/media";
+@import "bootstrap/images";
+@import "bootstrap/navbar";
+@import "bootstrap/nav";
+@import "bootstrap/mixins";
+//new imports
+@import "bootstrap/transitions";
 
 
 @import "../slick/slick";
