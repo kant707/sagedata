@@ -3,6 +3,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   line-height: 1.4;
+  //added this weight global as ui fonts wasnt getting matched
+  font-weight: 500;
 }
 
 .list-inline,
@@ -16,6 +18,14 @@ body {
     display: inline-block;
   }
 }
+.text-grey{
+  color: $grey1
+}
+
+.underline{
+  text-decoration: underline;
+}
+
 
 button,
 a:visited,
