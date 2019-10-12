@@ -1,13 +1,25 @@
 
 .pdp-page {
-  .section-seprator{
-    border-bottom: 2px dashed $grey-cc;
+  .cta-link {
+    color: $dark-pink;
   }
-  .pdp-img{
-    img{
+
+  .section-seprator {
+    border-bottom: 2px dashed $grey-cc;
+
+  }
+
+  //TODO dont know why pseudo classes was not working in scss format
+  .section-seprator:last-child{
+    border: 0;
+  }
+
+  .pdp-img {
+    img {
       max-height: 500px;
     }
   }
+
   .pdp-title {
     font-size: 30px;
     line-height: 40px;
@@ -45,18 +57,13 @@
     }
   }
 
-
-  .cta-link {
-    color: $dark-pink;
-  }
-
   .save-extra {
     font-size: 18px;
 
   }
 
   .checkout-card {
-    margin:0 auto;
+    margin: 0 auto;
     font-size: 18px;
     @media (min-width: 768px) {
       max-width: 300px;
@@ -77,7 +84,7 @@
     }
 
     .chkout-buttons {
-      button{
+      button {
         color: $white;
         border: 0;
       }
@@ -96,7 +103,7 @@
       background-color: $blue-93;
       @media (min-width: 768px) {
         border-radius: 10px;
-        width:100%;
+        width: 100%;
       }
 
     }
@@ -109,7 +116,7 @@
       background-image: linear-gradient(to bottom, $red-light, $red-07);
     }
 
-    .checkout-card-info{
+    .checkout-card-info {
       @media (max-width: 767px) {
         border: solid 1px $grey-cc;
         padding: 10px;
@@ -117,31 +124,110 @@
         background-image: linear-gradient(to bottom, $light-grey-1, $light-grey-2);
       }
     }
-    .cart-wishlist{
+
+    .cart-wishlist {
       @media (max-width: 767px) {
         background: $blue-93;
         border: 1px solid $blue-93;
         margin: 10px 0;
         border-radius: 10px;
-        .add-cart{
+        .add-cart {
           width: calc(100% - 100px);
           background-color: transparent;
         }
-        .wishlist{
+        .wishlist {
           width: 100px;
           background-color: $white;
           border-radius: 10px 0 0px 10px;
-          svg path{
-            fill : $white;
+
+          svg path {
+            fill: $white;
             stroke: $blue-93;
           }
-          span{
+
+          span {
             display: none;
           }
         }
-        .add-cart, .wishlist{
+        .add-cart, .wishlist {
           margin: 0;
         }
+      }
+    }
+  }
+
+  .section-title {
+
+    font-size: 24px;
+  }
+
+  .about-author {
+
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .perfect-match {
+    .match-product {
+      img {
+        max-height: 230px;
+      }
+      @media (max-width: 767px) {
+       img{max-height: 115px;}
+      }
+    }
+
+    .add-match-icon {
+      font-size: 50px;
+      @media (max-width: 767px) {
+        font-size: 25px;
+      }
+    }
+
+    .match-add-cart {
+      max-width: 230px;
+
+      button {
+        background-color: $blue-93;
+        color: $white;
+        border-radius: 10px;
+        min-height: 52px;
+        font-size: 20px;
+      }
+
+
+      @media (max-width: 767px) {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .products-slider{
+    img{
+      max-height: 230px;
+      margin: 0 auto;
+    }
+
+    .slick-prev, .slick-next{
+      &:before{
+        color: $blue-93;
+        font-size: 40px;
+        @media (max-width: 767px) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .slick-prev{
+        left: 0;
+      }
+
+      .slick-next{
+        right:0;
       }
     }
   }
