@@ -4,6 +4,7 @@
 @import "partials/alignments";
 @import "partials/global";
 
+@import "bootstrap/bootstrap";
 @import "bootstrap/bootstrap-reboot";
 @import "bootstrap/bootstrap-grid";
 @import "bootstrap/utilities";
@@ -15,8 +16,72 @@
 
 @import "../slick/slick";
 @import "../slick/slick-theme";
+@import "libraries/offcanvas-sidebar/offcanvas";
 @import "common/header";
 @import "common/footer";
 @import "pages/home";
 
+body {
+  @include offcanvas-push-left;
 
+  &.offcanvas-open {
+    overflow-y: hidden;
+
+    #offcanvas-overlay {
+      display: block;
+    }
+  }
+}
+
+#offcanvas-overlay {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 300%;
+  width: 300%;
+}
+
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) {
+  body #offcanvas-sidebar {
+    position: static;
+    margin-right: auto;
+    margin-left: auto;
+    background: transparent;
+    padding-top: 0;
+    width: auto;
+    height: auto;
+
+    ul {
+      width: auto;
+      margin: 0;
+      border-top: none;
+      padding: 0;
+    }
+    li {
+      border-bottom: none;
+    }
+    a {
+      padding: 0;
+      color: inherit;
+
+      &:hover {
+        color: inherit;
+        background: transparent;
+      }
+    }
+  }
+  #multiple-menu-tab {
+    display: none;
+  }
+
+}

@@ -113,6 +113,7 @@
       border-radius: 0 2px 2px 0;
       height: 100%;
       position: absolute;
+      top: 0;
       right: 0;
       background: #c4122f;
       color: #fff;
@@ -140,7 +141,8 @@
   @media (max-width: 991px) {
     .footer-heading,
     .heading-helping-text {
-      font-size: 16px;
+      font-size: 15px;
+      line-height: 1.5;
     }
 
     .link-list {
