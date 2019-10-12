@@ -31,7 +31,9 @@
   }
 
   .listener-list {
-    text-align: center;
+   @media (min-width: 768px) {
+     text-align: center;
+   }
 
     .list-item {
       display: inline-block;
@@ -140,7 +142,8 @@
   @media (max-width: 991px) {
     .footer-heading,
     .heading-helping-text {
-      font-size: 16px;
+      font-size: 15px;
+      line-height: 1.5;
     }
 
     .link-list {

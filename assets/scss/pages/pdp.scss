@@ -1,0 +1,234 @@
+
+.pdp-page {
+  .cta-link {
+    color: $dark-pink;
+  }
+
+  .section-seprator {
+    border-bottom: 2px dashed $grey-cc;
+
+  }
+
+  //TODO dont know why pseudo classes was not working in scss format
+  .section-seprator:last-child{
+    border: 0;
+  }
+
+  .pdp-img {
+    img {
+      max-height: 500px;
+    }
+  }
+
+  .pdp-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pdp-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .ratings {
+    .star {
+      color: $red;
+      list-style-type: none;
+
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .rating-numeric {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  .author {
+    font-size: 14px;
+
+    span {
+      color: $blue;
+      font-weight: 700;
+    }
+  }
+
+  .save-extra {
+    font-size: 18px;
+
+  }
+
+  .checkout-card {
+    margin: 0 auto;
+    font-size: 18px;
+    @media (min-width: 768px) {
+      max-width: 300px;
+      padding: 20px;
+      min-height: 200px;
+      border: solid 1px $grey-cc;
+      background-image: linear-gradient(to bottom, $light-grey-1, $light-grey-2);
+    }
+
+    .checkout-title {
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    .extra-off {
+      color: $blue;
+
+    }
+
+    .chkout-buttons {
+      button {
+        color: $white;
+        border: 0;
+      }
+
+      @media (max-width: 767px) {
+        position: sticky;
+        bottom: 0;
+        background-color: $white;
+        z-index: 1;
+      }
+    }
+
+    .add-cart, .wishlist {
+      min-height: 52.7px;
+      font-size: 20px;
+      background-color: $blue-93;
+      @media (min-width: 768px) {
+        border-radius: 10px;
+        width: 100%;
+      }
+
+    }
+
+    .order-button {
+      font-size: 24px;
+      font-weight: 700;
+      min-height: 55px;
+      text-transform: uppercase;
+      background-image: linear-gradient(to bottom, $red-light, $red-07);
+    }
+
+    .checkout-card-info {
+      @media (max-width: 767px) {
+        border: solid 1px $grey-cc;
+        padding: 10px;
+        margin: 10px auto;
+        background-image: linear-gradient(to bottom, $light-grey-1, $light-grey-2);
+      }
+    }
+
+    .cart-wishlist {
+      @media (max-width: 767px) {
+        background: $blue-93;
+        border: 1px solid $blue-93;
+        margin: 10px 0;
+        border-radius: 10px;
+        .add-cart {
+          width: calc(100% - 100px);
+          background-color: transparent;
+        }
+        .wishlist {
+          width: 100px;
+          background-color: $white;
+          border-radius: 10px 0 0px 10px;
+
+          svg path {
+            fill: $white;
+            stroke: $blue-93;
+          }
+
+          span {
+            display: none;
+          }
+        }
+        .add-cart, .wishlist {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .section-title {
+
+    font-size: 24px;
+  }
+
+  .about-author {
+
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .perfect-match {
+    .match-product {
+      img {
+        max-height: 230px;
+      }
+      @media (max-width: 767px) {
+       img{max-height: 115px;}
+      }
+    }
+
+    .add-match-icon {
+      font-size: 50px;
+      @media (max-width: 767px) {
+        font-size: 25px;
+      }
+    }
+
+    .match-add-cart {
+      max-width: 230px;
+
+      button {
+        background-color: $blue-93;
+        color: $white;
+        border-radius: 10px;
+        min-height: 52px;
+        font-size: 20px;
+      }
+
+
+      @media (max-width: 767px) {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .products-slider{
+    img{
+      max-height: 230px;
+      margin: 0 auto;
+    }
+
+    .slick-prev, .slick-next{
+      &:before{
+        color: $blue-93;
+        font-size: 40px;
+        @media (max-width: 767px) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .slick-prev{
+        left: 0;
+      }
+
+      .slick-next{
+        right:0;
+      }
+    }
+  }
+}
