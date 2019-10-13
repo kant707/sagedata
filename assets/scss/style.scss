@@ -1,7 +1,6 @@
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/gutters";
-@import "partials/alignments";
 @import "partials/global";
 
 @import "bootstrap/bootstrap";
@@ -20,6 +19,8 @@
 @import "common/header";
 @import "common/footer";
 @import "pages/home";
+@import "pages/product-details";
+@import "pages/pdp";
 
 body {
   @include offcanvas-push-left;
