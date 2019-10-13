@@ -19,6 +19,7 @@
 @import "common/footer";
 @import "pages/home";
 @import "pages/pdp";
+@import "pages/search-page";
 
 body {
   @include offcanvas-push-left;
