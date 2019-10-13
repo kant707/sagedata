@@ -27,3 +27,19 @@ body {
 }
 
 
+button,
+a:visited,
+a:active,
+a:focus {
+  outline: none;
+}
+
+.slick-slider {
+  &:focus,
+  .slick-slide:focus,
+  a:visited,
+  a:active,
+  a:focus {
+    outline: none;
+  }
+}
