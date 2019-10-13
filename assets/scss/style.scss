@@ -21,6 +21,8 @@
 @import "pages/home";
 @import "pages/product-details";
 @import "pages/pdp";
+@import "pages/search-page";
+
 
 body {
   @include offcanvas-push-left;

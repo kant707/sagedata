@@ -16372,6 +16372,95 @@ Example media query - to hide Offcanvas on screen widths above 768px.
   .pdp-page .products-slider .slick-next {
     right: 0; } }
 
+.search-page .card {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  height: 100%; }
+  .search-page .card .p-card-title, .search-page .card .p-author {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
+  .search-page .card .p-card-info {
+    overflow: hidden;
+    position: relative; }
+  .search-page .card .on-hover, .search-page .card .no-hover {
+    min-height: 95px; }
+  .search-page .card .on-hover {
+    background-color: #fff;
+    bottom: -180%;
+    left: 0;
+    position: absolute;
+    transition: bottom 0.5s ease; }
+  .search-page .card:hover .on-hover {
+    bottom: 0%; }
+.search-page .select-style {
+  padding: 0;
+  margin: 0;
+  right: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff url("../images/icons/arrow-down.svg") no-repeat 90% 50%;
+  background-size: 15px auto; }
+  .search-page .select-style select {
+    font-size: 16px;
+    color: #191515;
+    padding: 5px 25px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+    .search-page .select-style select option {
+      font-size: 12px; }
+    .search-page .select-style select:focus {
+      outline: none; }
+.search-page .p-card-info button {
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #b91616; }
+  .search-page .p-card-info button.add-cart {
+    background-color: #b91616;
+    color: #fff; }
+  .search-page .p-card-info button.wishlist {
+    color: #b91616;
+    background-color: #fff; }
+    .search-page .p-card-info button.wishlist svg {
+      height: 16px;
+      width: 20px; }
+.search-page .p-price-info {
+  font-size: 15px; }
+  .search-page .p-price-info .actual-price {
+    color: #ccc;
+    text-decoration: line-through; }
+  .search-page .p-price-info .discount {
+    color: #ec4b14;
+    font-size: 10px; }
+@media (min-width: 768px) {
+  .search-page .filter-bar {
+    border-right: 2px dashed #ccc; } }
+.search-page .filter-categories .filter-title {
+  font-size: 18px;
+  color: #26358c; }
+.search-page .filter-categories li {
+  font-weight: 500; }
+@media (max-width: 767px) {
+  .search-page .modal-fixed-footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1002;
+    background: #fff;
+    list-style: none;
+    border-top: 1px solid #ccc;
+    left: 0;
+    transition: all .3s ease-in-out; } }
+
 body #offcanvas-sidebar {
   position: fixed;
   top: 0;
