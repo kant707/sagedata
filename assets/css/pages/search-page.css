@@ -1,62 +1,48 @@
 /*
-Error: Invalid CSS after "...lor}: #{$value}": expected "{", was ";"
-        on line 4 of D:/task/sagedata/assets/scss/bootstrap/_root.scss
-        from line 11 of D:/task/sagedata/assets/scss/bootstrap/bootstrap.scss
-        from line 2 of D:/task/sagedata/assets/scss/style.scss
+Error: Undefined variable: "$light-grey".
+        on line 4 of D:/task/sagedata/assets/scss/pages/search-page.scss
 
-1: :root {
-2:   // Custom variable values only support SassScript inside `#{}`.
-3:   @each $color, $value in $colors {
-4:     --#{$color}: #{$value};
-5:   }
-6: 
-7:   @each $color, $value in $theme-colors {
-8:     --#{$color}: #{$value};
-9:   }
+1: 
+2: .search-page {
+3:   .card {
+4:     box-shadow: 0 3px 6px 0 $light-grey;
+5:     background-color: $white;
+6:     height:100%;
+7: 
+8:   .p-card-title, .p-author{
+9:     display: -webkit-box;
 
 Backtrace:
-D:/task/sagedata/assets/scss/bootstrap/_root.scss:4
-D:/task/sagedata/assets/scss/bootstrap/bootstrap.scss:11
-D:/task/sagedata/assets/scss/style.scss:2
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:307:in `each_directive'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:222:in `special_directive'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:197:in `directive'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+D:/task/sagedata/assets/scss/pages/search-page.scss:4
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/list_literal.rb:63:in `_perform'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
@@ -95,4 +81,4 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...lor}: #{$value}\": expected \"{\", was \";\"\A         on line 4 of D:/task/sagedata/assets/scss/bootstrap/_root.scss\A         from line 11 of D:/task/sagedata/assets/scss/bootstrap/bootstrap.scss\A         from line 2 of D:/task/sagedata/assets/scss/style.scss\A \A 1: :root {\A 2:   // Custom variable values only support SassScript inside `#{}`.\A 3:   @each $color, $value in $colors {\A 4:     --#{$color}: #{$value};\A 5:   }\A 6: \A 7:   @each $color, $value in $theme-colors {\A 8:     --#{$color}: #{$value};\A 9:   }"; }
+  content: "Error: Undefined variable: \"$light-grey\".\A         on line 4 of D:/task/sagedata/assets/scss/pages/search-page.scss\A \A 1: \A 2: .search-page {\A 3:   .card {\A 4:     box-shadow: 0 3px 6px 0 $light-grey;\A 5:     background-color: $white;\A 6:     height:100%;\A 7: \A 8:   .p-card-title, .p-author{\A 9:     display: -webkit-box;"; }

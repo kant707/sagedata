@@ -1,0 +1,142 @@
+
+.search-page {
+  .card {
+    box-shadow: 0 3px 6px 0 $light-grey;
+    background-color: $white;
+    height:100%;
+
+  .p-card-title, .p-author{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+    //  hover effect
+    .p-card-info {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .on-hover, .no-hover {
+      min-height: 95px;
+    }
+
+
+    .on-hover {
+      background-color: $white;
+      bottom: -180%;
+      left: 0;
+      position: absolute;
+      transition: bottom 0.5s ease;
+    }
+
+    &:hover {
+      .on-hover {
+        bottom: 0%;
+      }
+    }
+  }
+
+  .select-style {
+    padding: 0;
+    margin: 0;
+    right: 12px;
+    border: 1px solid $grey-cc;
+    border-radius: 2px;
+    overflow: hidden;
+    background: $white url("../images/icons/arrow-down.svg") no-repeat 90% 50%;
+    background-size: 15px auto;
+
+    select {
+      font-size: 16px;
+      color: $regular-text;
+      padding: 5px 25px;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      background-image: none;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      option {
+        font-size: 12px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+  }
+
+  .p-card-info {
+    button {
+      font-size: 14px;
+      text-transform: uppercase;
+      border: 1px solid $dark-red;
+
+      &.add-cart {
+        background-color: $dark-red;
+        color: $white
+      }
+
+      &.wishlist {
+        color: $dark-red;
+        background-color: $white;
+
+        svg {
+          height: 16px;
+          width: 20px;
+        }
+      }
+    }
+
+  }
+
+  .p-price-info {
+    font-size: 15px;
+
+    .actual-price {
+      color: $grey-cc;
+      text-decoration: line-through;
+    }
+
+    .discount {
+      color: $red-light;
+      font-size: 10px;
+    }
+  }
+
+  .filter-bar{
+    @media (min-width: 768px) {
+      border-right: 2px dashed $grey-cc;
+    }
+  }
+  .filter-categories{
+    .filter-title{
+      font-size: 18px;
+      color: $blue;
+    }
+    li{
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .modal-fixed-footer{
+      position: fixed;
+      bottom: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      z-index: 1002;
+      background: $white;
+      list-style: none;
+      border-top: 1px solid $grey-cc;
+      left: 0;
+      transition: all .3s ease-in-out;
+    }
+  }
+}
+
