@@ -15622,7 +15622,7 @@ Example media query - to hide Offcanvas on screen widths above 768px.
   .main-header .action-bar {
     align-items: self-start;
     padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-bottom: 10px; }
     @media (min-width: 768px) and (max-width: 991px) {
       .main-header .action-bar .search-form-col {
         padding-right: 0; } }
@@ -15635,7 +15635,7 @@ Example media query - to hide Offcanvas on screen widths above 768px.
       display: none; }
   .main-header .brand-logo {
     display: inline-block;
-    max-width: 148px;
+    max-width: 172px;
     padding-top: 0;
     padding-bottom: 0; }
   .main-header .action-list {
@@ -15652,7 +15652,8 @@ Example media query - to hide Offcanvas on screen widths above 768px.
       padding: 2px;
       width: 28px; }
   .main-header .header-banner {
-    background: url("../images/header_promotion.jpg") no-repeat top center/cover;
+    background: #faf1f2 url("../images/header_promotion.jpg") no-repeat top center;
+    background-size: auto 100%;
     border-top: 2px dashed rgba(112, 112, 112, 0.5);
     height: 134px; }
     @media (max-width: 991px) {
@@ -15681,6 +15682,8 @@ Example media query - to hide Offcanvas on screen widths above 768px.
     font-size: 14px; }
     .main-header .search-help img {
       max-height: 20px; }
+    .main-header .search-help p {
+      font-weight: 500; }
   .main-header .top-menu {
     font-size: 16px;
     position: absolute;
@@ -15698,12 +15701,15 @@ Example media query - to hide Offcanvas on screen widths above 768px.
       .main-header .top-menu .hot-menu-wrap .item-link {
         padding: 2px; }
       .main-header .top-menu .hot-menu-wrap .sup {
-        color: #ec4b14; }
+        color: #ec4b14;
+        left: 4px;
+        top: -10px; }
     .main-header .top-menu a {
       color: #191515; }
   .main-header .bottom-menu {
     border-top: 2px dashed #707070;
-    border-bottom: 2px dashed #707070; }
+    border-bottom: 2px dashed #707070;
+    text-transform: uppercase; }
     .main-header .bottom-menu ul {
       display: flex; }
       .main-header .bottom-menu ul li {
@@ -15722,7 +15728,9 @@ Example media query - to hide Offcanvas on screen widths above 768px.
     .main-header .bottom-menu a {
       font-size: 14px; }
     .main-header .top-menu .connect-list-wrap {
-      padding-right: 0; } }
+      padding-right: 0; }
+    .main-header .brand-logo {
+      max-width: 148px; } }
   @media (max-width: 767px) {
     .main-header .logo-col {
       padding-right: 0;
@@ -15905,10 +15913,10 @@ Example media query - to hide Offcanvas on screen widths above 768px.
   .main-footer {
     padding-bottom: 20px; } }
 .top-carousel-wrap {
-  margin-right: auto;
+  width: 100%;
   margin-left: auto;
-  max-width: 1200px;
-  width: 100%; }
+  margin-right: auto;
+  max-width: 1900px; }
   .top-carousel-wrap .slick-dots {
     bottom: 0; }
     .top-carousel-wrap .slick-dots li button:before {
@@ -15989,10 +15997,12 @@ Example media query - to hide Offcanvas on screen widths above 768px.
 .sage-accelerate .article-list .text-content {
   font-size: 16px; }
 .sage-accelerate .article-list .article-link {
-  color: #3d438c; }
-.sage-accelerate .article-list .read-more {
-  color: #c4122f;
+  color: #3d438c;
   text-decoration: underline; }
+.sage-accelerate .article-list .read-more {
+  color: #c4122f; }
+  .sage-accelerate .article-list .read-more:hover {
+    text-decoration: underline; }
 @media (max-width: 1199px) {
   .sage-accelerate .heading {
     font-size: 22px; }
@@ -16091,9 +16101,12 @@ Example media query - to hide Offcanvas on screen widths above 768px.
   position: relative; }
   .be-a-sage a {
     color: #ec4b14;
-    text-decoration: underline; }
+    font-weight: bold; }
     .be-a-sage a:hover {
-      color: inherit; }
+      color: #ec4b14;
+      text-decoration: underline; }
+    .be-a-sage a:last-child {
+      text-transform: uppercase; }
   .be-a-sage .text-1,
   .be-a-sage .text-2,
   .be-a-sage .text-3 {
