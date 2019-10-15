@@ -1,0 +1,10 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/gutters";
+@import "partials/global";
+
+@import "../slick/slick";
+@import "../slick/slick-theme";
+
+@import "pages/home";
+@import "pages/home-responsive";
