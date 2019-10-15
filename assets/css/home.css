@@ -840,6 +840,9 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
   max-width: 1900px; }
+  .top-carousel-wrap .slick-slide img {
+    margin-right: auto;
+    margin-left: auto; }
   .top-carousel-wrap .slick-dots {
     bottom: 0; }
     .top-carousel-wrap .slick-dots li button:before {
