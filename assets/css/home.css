@@ -599,7 +599,8 @@
 
 html,
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.4; }
 
@@ -843,6 +844,9 @@ a:focus {
   .top-carousel-wrap .slick-slide img {
     margin-right: auto;
     margin-left: auto; }
+    @media (max-width: 1600px) {
+      .top-carousel-wrap .slick-slide img {
+        max-height: 650px; } }
   .top-carousel-wrap .slick-dots {
     bottom: 0; }
     .top-carousel-wrap .slick-dots li button:before {

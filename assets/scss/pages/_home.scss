@@ -7,8 +7,11 @@
   .slick-slide img {
     margin-right: auto;
     margin-left: auto;
+    @media (max-width: 1600px) {
+      max-height: 650px;
+    }
   }
-  
+
   .slick-dots {
     bottom: 0;
 

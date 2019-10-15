@@ -598,7 +598,8 @@
 
 html,
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.4; }
 
@@ -8375,6 +8376,48 @@ Example media query - to hide Offcanvas on screen widths above 768px.
 	}
 }
 */
+@font-face {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/Allura-Regular.woff2") format("woff2"), url("../fonts/Allura-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'CaflischScript';
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/CaflischScript-Bold.woff2") format("woff2"), url("../fonts/CaflischScript-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'CaflischScript';
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/CaflischScript-Web.woff2") format("woff2"), url("../fonts/CaflischScript-Web.woff") format("woff"); }
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTStd-Lt.woff2") format("woff2"), url("../fonts/HelveticaNeueLTStd-Lt.woff") format("woff"); }
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTStd-Bd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTStd-Bd.woff") format("woff"); }
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/../fonts/HelveticaNeueLTStd-Hv.woff2") format("woff2"), url("../fonts/../fonts/HelveticaNeueLTStd-Hv.woff") format("woff"); }
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueLTStd-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueLTStd-Roman.woff") format("woff"); }
 .top-notification {
   background: #f5c524;
   font-size: 12px;
