@@ -61,7 +61,6 @@
   }
 
 
-
   .action-list {
     margin-top: 10px;
     margin-bottom: 0;
@@ -198,6 +197,9 @@
     a {
       font-size: 15px;
       color: $black;
+    }
+    span {
+      padding-top: 5px;
     }
   }
 

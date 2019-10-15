@@ -8538,6 +8538,8 @@ Example media query - to hide Offcanvas on screen widths above 768px.
     .main-header .bottom-menu a {
       font-size: 15px;
       color: #000; }
+    .main-header .bottom-menu span {
+      padding-top: 5px; }
   .main-header #multiple-menu-tabs {
     display: none; }
   .main-header #nav-menu,
