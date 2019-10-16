@@ -191,7 +191,7 @@
     </header><!-- END Main header -->
 
     <!-- Main content -->
-    <main class="main-content pb30">
+    <main class="main-content dashed-border pb30">
       <section class="container product-section">
         <div class="row">
           <div class="col-md-8 col-lg-9 product-details-wrap">
@@ -264,27 +264,31 @@
               </ul>
             </div>
             <div class="action-card-inner">
-              <div class="mrp mb20">₹ 310.00</div>
-              <div class="buy-now-price mb15">
-                <span>Buy now at</span>:
-                <span class="buy-now-price">₹ 250.00</span>
-              </div>
-              <div class="offer-text mb15">
-                Buy within
-                <span class="time-left">48 hours</span> and get
-                <span class="percentage">5%</span> off @
-                <span class="discounted-price">₹ 300.00</span>
+              <div class="price-offer-info">
+                <div class="mrp mb20">₹ 310.00</div>
+                <div class="buy-now-price mb15">
+                  <span>Buy now at</span>:
+                  <span class="buy-now-price">₹ 250.00</span>
+                </div>
+                <div class="offer-text mb15">
+                  Buy within
+                  <span class="time-left">48 hours</span> and get
+                  <span class="percentage">5%</span> off @
+                  <span class="discounted-price">₹ 300.00</span>
+                </div>
               </div>
               <div class="cta-wrap">
-                <button type="button" class="button x-y add-to-cart mb15">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33.643" height="33.215" viewBox="0 0 33.643 33.215"><title>cart</title><path d="M29.149 26.419H10.594l-.715-2.923h20.745l3.019-13.145-26.733-3.2L5.685.002H0v1.363h4.536l.962 5.617-.048-.006 2.991 16.522h.035l.717 2.932c-.061 0-.121-.01-.183-.01a3.412 3.412 0 102.714 1.361h14.71a3.394 3.394 0 102.715-1.362zm-21.474-14.8L7.15 8.551l24.825 2.976-2.434 10.607H9.579zm1.336 20.232a2.036 2.036 0 112.036-2.036 2.038 2.038 0 01-2.036 2.036zm20.139 0a2.036 2.036 0 112.035-2.036 2.038 2.038 0 01-2.036 2.036z" fill="currentColor"/></svg>
-                  Add to cart
-                </button>
-                <button type="button" class="button x-y wishlist mb15">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28.137" height="25.86" viewBox="0 0 28.137 25.86"><title>wishlist</title><path d="M19.532.376a8.178 8.178 0 00-5.463 2.077A8.229 8.229 0 00.375 8.605c0 3.988 1.931 6.179 5.112 9.315 2 1.974 8.245 7.407 8.307 7.462a.418.418 0 00.549 0c.063-.055 6.305-5.488 8.307-7.462 3.181-3.136 5.112-5.328 5.112-9.315a8.239 8.239 0 00-8.23-8.229zm2.531 16.949c-1.744 1.719-6.763 6.112-7.994 7.187-1.231-1.075-6.251-5.468-7.994-7.187-3.306-3.259-4.86-5.182-4.86-8.72a7.392 7.392 0 0112.564-5.282.419.419 0 00.586 0 7.392 7.392 0 0112.56 5.282c.001 3.538-1.557 5.461-4.862 8.719z" stroke="currentColor" fill="currentColor"/></svg>
-                  Wishlist
-                </button>
-                <button type="button" class="button x-y buy-now">
+                <div class="d-flex flex-md-column cart-n-wishlist">
+                  <button type="button" class="order-md-0 order-1 button add-to-cart mb15">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33.643" height="33.215" viewBox="0 0 33.643 33.215"><title>cart</title><path d="M29.149 26.419H10.594l-.715-2.923h20.745l3.019-13.145-26.733-3.2L5.685.002H0v1.363h4.536l.962 5.617-.048-.006 2.991 16.522h.035l.717 2.932c-.061 0-.121-.01-.183-.01a3.412 3.412 0 102.714 1.361h14.71a3.394 3.394 0 102.715-1.362zm-21.474-14.8L7.15 8.551l24.825 2.976-2.434 10.607H9.579zm1.336 20.232a2.036 2.036 0 112.036-2.036 2.038 2.038 0 01-2.036 2.036zm20.139 0a2.036 2.036 0 112.035-2.036 2.038 2.038 0 01-2.036 2.036z" fill="currentColor"/></svg>
+                    Add to cart
+                  </button>
+                  <button type="button" class="order-md-1 button wishlist mb15">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28.137" height="25.86" viewBox="0 0 28.137 25.86"><title>wishlist</title><path d="M19.532.376a8.178 8.178 0 00-5.463 2.077A8.229 8.229 0 00.375 8.605c0 3.988 1.931 6.179 5.112 9.315 2 1.974 8.245 7.407 8.307 7.462a.418.418 0 00.549 0c.063-.055 6.305-5.488 8.307-7.462 3.181-3.136 5.112-5.328 5.112-9.315a8.239 8.239 0 00-8.23-8.229zm2.531 16.949c-1.744 1.719-6.763 6.112-7.994 7.187-1.231-1.075-6.251-5.468-7.994-7.187-3.306-3.259-4.86-5.182-4.86-8.72a7.392 7.392 0 0112.564-5.282.419.419 0 00.586 0 7.392 7.392 0 0112.56 5.282c.001 3.538-1.557 5.461-4.862 8.719z" stroke="currentColor" fill="currentColor"/></svg>
+                    <span class="d-none d-md-inline-block d-lg-inline-block">Wishlist</span>
+                  </button>
+                </div>
+                <button type="button" class="button buy-now">
                   order now
                 </button>
               </div>
@@ -294,12 +298,56 @@
       </section>
     </main><!-- END Main content -->
 
+    <!-- About author -->
+    <section class="container-fluid dashed-border about-author">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <h2 class="section-heading">
+              About the Author
+            </h2>
+            <p class="mb30 text-content">
+              Pradip Chanda is a management consultant, author, columnist and noted speaker on the subject of corporate turnarounds and start-ups.
+              <a href="" class="read-more">Read more>></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- END About author -->
+
+    <!-- Matching combo -->
+    <Section class="container-fluid dashed-border matching-combo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-heading">The Perfect Match</h2>
+            <div class="combo-list-wrap">
+              <ul class="list-inline combo-list">
+                <li class="list-item">
+                  <img class="img-fluid combo-img" src="./assets/images/combo_1.jpg" alt="">
+                </li>
+                <li class="list-item"><span class="add">+</span></li>
+                <li class="list-item">
+                  <img class="img-fluid combo-img" src="./assets/images/combo_2.jpg" alt="">
+                </li>
+                <li class="list-item d-block d-md-inline-block d-lg-inline-block">
+                  <button type="button" class="button cta mb15">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33.643" height="33.215" viewBox="0 0 33.643 33.215"><title>cart</title><path d="M29.149 26.419H10.594l-.715-2.923h20.745l3.019-13.145-26.733-3.2L5.685.002H0v1.363h4.536l.962 5.617-.048-.006 2.991 16.522h.035l.717 2.932c-.061 0-.121-.01-.183-.01a3.412 3.412 0 102.714 1.361h14.71a3.394 3.394 0 102.715-1.362zm-21.474-14.8L7.15 8.551l24.825 2.976-2.434 10.607H9.579zm1.336 20.232a2.036 2.036 0 112.036-2.036 2.038 2.038 0 01-2.036 2.036zm20.139 0a2.036 2.036 0 112.035-2.036 2.038 2.038 0 01-2.036 2.036z" fill="currentColor"></path></svg>
+                    Add to cart
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section><!-- END Matching combo -->
 
     <!-- Editors pick books -->
-    <section class="container-fluid editors-pick mb20">
+    <section class="container-fluid dashed-border editors-pick mb20">
       <div class="container">
         <h2 class="section-heading">Editors Pick For You</h2>
-        <div class="editors-pick-carousel ptb15">
+        <div class="editors-pick-carousel mb30">
           <div>
             <a href="#" class="book-banner-link">
               <img class="img-fluid" src="./assets/images/editor_pick_1.jpg" alt="">
@@ -345,10 +393,10 @@
     </section><!-- END Editors pick books -->
 
     <!-- Customers choice books -->
-    <section class="container-fluid customer-choice mb20">
+    <section class="container-fluid dashed-border customer-choice mb20">
       <div class="container">
         <h2 class="section-heading">Customer's Choice</h2>
-        <div class="customer-choice-carousel ptb15">
+        <div class="customer-choice-carousel mb30">
           <div>
             <a href="#" class="book-banner-link">
               <img class="img-fluid" src="./assets/images/user_choice_1.jpg" alt="">
