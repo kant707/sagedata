@@ -216,16 +216,17 @@
     <main class="container search-page">
 
         <!-- product  search section a -->
-        <div class="row position-relative">
+        <div class="row position-relative-web">
             <div class="col-md-3 pt50 filter-bar">
 
                 <!-- Modal Structure -->
                 <div  class="bottom-sheet">
                     <div class="">
-                        <button class="d-block d-md-none dropbtn">
-                            Sort by: Title
+                        <button id="filterBy" class="d-block d-md-none dropbtn">
+                            Filter
                         </button>
-                        <div class="sheet-content">
+                        <div  id="filterSheet" class="sheet-content">
+                            <div class="sheet">
                             <div class="mb15 filter-categories">
 
                                 <strong class="filter-title">Categories</strong>
@@ -282,6 +283,7 @@
                                     </li>
 
                                 </ul>
+                            </div>
                             </div>
                         </div>
 
@@ -292,14 +294,16 @@
 
                 <div class="drop-down-wrapper bottom-sheet">
                     <div class="select-dropdown">
-                        <button class="dropbtn">
+                        <button id="sortBy" class="dropbtn">
                             Sort by: Title
 
                         </button>
-                        <div class="dropdown-content sheet-content">
-                            <a class="ptb10 prl15 text-decoration-none" href="#">Link 1</a>
-                            <a class="ptb10 prl15 text-decoration-none" href="#">Link 2</a>
-                            <a class="ptb10 prl15 text-decoration-none" href="#">Link 3</a>
+                        <div id="sortSheet" class="dropdown-content sheet-content">
+                          <div class="sheet">
+                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 1</a>
+                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 2</a>
+                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 3</a>
+                          </div>
                         </div>
                     </div>
 

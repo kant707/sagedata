@@ -128,4 +128,34 @@ $(document).ready(function(){
     ]
   });
 
+//  bottom sheet\
+  if ($(window).width() < 768) {
+
+    $('#filterBy').on('click', function(){
+      $('#filterSheet').slideToggle(200);
+      $("body").toggleClass('fixed-scroll');
+      // if (  $('#sortBy + #sortSheet').slideUp()){
+      //   $(this).slideDown();
+      // }
+
+
+
+    });
+
+    $('#sortBy').on('click', function(){
+      $('#sortSheet').slideToggle(200);
+      $("body").toggleClass('fixed-scroll');
+      // if (  $('#filterBy + #filterSheet').slideUp()){
+      //   $(this).slideDown();
+      // }
+
+    });
+
+
+  }
+
+
+
+
+
 });
