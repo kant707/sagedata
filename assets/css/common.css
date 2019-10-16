@@ -8473,14 +8473,12 @@ Example media query - to hide Offcanvas on screen widths above 768px.
       padding: 2px;
       width: 28px; }
   .main-header .header-banner {
-    background: #faf1f2 url("../images/header_promotion.jpg") no-repeat top center;
-    background-size: auto 100%;
-    border-top: 2px dashed rgba(112, 112, 112, 0.5);
-    height: 134px; }
-    @media (max-width: 991px) {
+    background: #faf1f2;
+    border-top: 2px dashed rgba(112, 112, 112, 0.5); }
+    @media (max-width: 575px) {
       .main-header .header-banner {
-        height: 100px;
-        display: none; } }
+        padding-top: 6px;
+        padding-bottom: 6px; } }
   .main-header .search-form-col .search-form .form-control {
     border-color: #26358c;
     border-right: none;

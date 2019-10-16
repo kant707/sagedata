@@ -85,14 +85,12 @@
 
 
   .header-banner {
-    background: #faf1f2 url("../images/header_promotion.jpg") no-repeat top center;
-    background-size: auto 100%;
+    background: #faf1f2;
     border-top: 2px dashed rgba(112, 112, 112, 0.5);
-    height: 134px;
 
-    @media (max-width: 991px) {
-      height: 100px;
-      display: none;
+    @media (max-width: 575px) {
+      padding-top: 6px;
+      padding-bottom: 6px;
     }
   }
 
