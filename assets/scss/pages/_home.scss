@@ -1,8 +1,16 @@
 .top-carousel-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1900px;
+
+  .slick-slide img {
+    margin-right: auto;
+    margin-left: auto;
+    @media (max-width: 1600px) {
+      max-height: 650px;
+    }
+  }
 
   .slick-dots {
     bottom: 0;
@@ -135,10 +143,13 @@
     }
     .article-link {
       color: $navy-blue;
+      text-decoration: underline;
     }
     .read-more {
       color: $red-2f;
-      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -306,10 +317,14 @@
 
   a {
     color: $red-light;
-    text-decoration: underline;
+    font-weight: bold;
 
     &:hover {
-      color: inherit;
+      color: $red-light;
+      text-decoration: underline;
+    }
+    &:last-child {
+      text-transform: uppercase;
     }
   }
   .text-1,

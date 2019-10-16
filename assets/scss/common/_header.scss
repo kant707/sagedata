@@ -25,17 +25,13 @@
   position: relative;
   padding-top: 50px;
 
-
-
-
-
   .action-bar-warp {
     border-top: 2px dashed $grey1;
   }
   .action-bar {
     align-items: self-start;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 
     @media (min-width: 768px) and (max-width: 991px) {
       .search-form-col {
@@ -59,11 +55,10 @@
 
   .brand-logo {
     display: inline-block;
-    max-width: 148px;
+    max-width: 172px;
     padding-top: 0;
     padding-bottom: 0;
   }
-
 
 
   .action-list {
@@ -90,7 +85,8 @@
 
 
   .header-banner {
-    background: url("../images/header_promotion.jpg") no-repeat top center/cover;
+    background: #faf1f2 url("../images/header_promotion.jpg") no-repeat top center;
+    background-size: auto 100%;
     border-top: 2px dashed rgba(112, 112, 112, 0.5);
     height: 134px;
 
@@ -138,6 +134,9 @@
     img {
       max-height: 20px;
     }
+    p {
+      font-weight: 500;
+    }
   }
 
   .top-menu {
@@ -172,6 +171,8 @@
       }
       .sup {
         color: $red-light;
+        left: 4px;
+        top: -10px;
       }
     }
 
@@ -183,6 +184,7 @@
   .bottom-menu {
     border-top: 2px dashed $grey1;
     border-bottom: 2px dashed $grey1;
+    text-transform: uppercase;
 
     ul {
       display: flex;
@@ -195,6 +197,9 @@
     a {
       font-size: 15px;
       color: $black;
+    }
+    span {
+      padding-top: 5px;
     }
   }
 
@@ -216,6 +221,10 @@
       .connect-list-wrap {
         padding-right: 0;
       }
+    }
+
+    .brand-logo {
+      max-width: 148px;
     }
   }
 

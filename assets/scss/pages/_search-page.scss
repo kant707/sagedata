@@ -54,10 +54,11 @@
            position: absolute;
            left:0;
            right:0;
+           top: 30px;
            margin: 0 auto;
            background-color: $white;
            min-width: 160px;
-           border: 1px solid $grey-cc;
+           border: 1px solid $grey1;
            z-index: 1;
            a {
              font-size: 12px;
@@ -74,14 +75,15 @@
          }
 
          .dropbtn {
+           display: flex;
            cursor: pointer;
            font-size: 14px;
            padding: 5px 30px 5px 20px;
            background-color: $white;
            border: 1px solid $grey-cc;
            border-radius: 2px;
-           background: url("../images/icons/arrow-down.svg") no-repeat 95% center;
-           background-size:15px 15px;
+           background: url(../images/icons/arrow-down.svg) no-repeat 92% center;
+           background-size: 10px 10px;
          }
 
          .dropbtn, a {
@@ -89,7 +91,7 @@
          }
          &:hover{
             .dropbtn {
-             background-color:$light-grey;
+             border-color: $grey1
            }
            .dropdown-content {
              display: block;
@@ -150,15 +152,8 @@
       border-right: 2px dashed $grey-cc;
     }
     @media (max-width: 767px) {
-      position: fixed;
-      width: 100%;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      z-index: 1002;
-      background: $white;
-      border-top: 1px solid $grey-cc;
-      max-width: 540px;
+      //position: fixed;
+
     }
   }
 
@@ -173,8 +168,10 @@
     }
   }
 
-  @media (max-width: 767px) {
 
-  }
+}
+
+@media (max-width: 767px) {
+
 }
 
