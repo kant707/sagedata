@@ -8484,6 +8484,7 @@ Example media query - to hide Offcanvas on screen widths above 768px.
     border-right: none;
     border-radius: 24px 0 0 24px;
     height: 44px;
+    padding-top: 10px;
     padding-left: 20px; }
     .main-header .search-form-col .search-form .form-control:focus {
       border-color: inherit;
@@ -8502,7 +8503,8 @@ Example media query - to hide Offcanvas on screen widths above 768px.
     .main-header .search-help img {
       max-height: 20px; }
     .main-header .search-help p {
-      font-weight: 500; }
+      font-weight: 500;
+      padding-top: 5px; }
   .main-header .top-menu {
     font-size: 16px;
     position: absolute;
@@ -8689,7 +8691,7 @@ Example media query - to hide Offcanvas on screen widths above 768px.
       color: #f00; }
     .main-footer .subscribe-form .email {
       width: 100%;
-      padding: 8px 100px 6px 12px;
+      padding: 10px 100px 6px 12px;
       border-radius: 2px;
       border: 1px solid #ccc; }
       .main-footer .subscribe-form .email:focus, .main-footer .subscribe-form .email:active {
