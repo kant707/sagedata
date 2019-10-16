@@ -5,8 +5,9 @@
     <meta name="author" content="Shashikant">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sage | Home Page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Sage | Search Page</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/search-page.css">
 </head>
 <body>
 
@@ -215,15 +216,18 @@
     <main class="container search-page">
 
         <!-- product  search section a -->
-        <div class="row position-relative">
+        <div class="row position-relative-web">
             <div class="col-md-3 pt50 filter-bar">
-                <!-- Modal Trigger -->
-
 
                 <!-- Modal Structure -->
-                <div id="filterBy" class="modal bottom-sheet modal-fixed-footer">
-                    <div class="modal-content">
-                        <div class="mb15 filter-categories">
+                <div  class="bottom-sheet">
+                    <div class="">
+                        <button id="filterBy" class="d-block d-md-none dropbtn">
+                            Filter
+                        </button>
+                        <div  id="filterSheet" class="sheet-content">
+                            <div class="sheet">
+                            <div class="mb15 filter-categories">
 
                                 <strong class="filter-title">Categories</strong>
                                 <ul class="list-unstyled">
@@ -241,44 +245,46 @@
                                     </li>
 
                                 </ul>
-                        </div>
-                        <div class="mb15 filter-categories">
+                            </div>
+                            <div class="mb15 filter-categories">
 
-                            <strong class="filter-title">Categories</strong>
-                            <ul class="list-unstyled">
-                                <li class="ptb15">
-                                    Curated for you
-                                </li>
-                                <li class="ptb15">
-                                    Academic Books
-                                </li>
-                                <li class="ptb15">
-                                    Critically acclaimed
-                                </li>
-                                <li class="ptb15">
-                                    Curated for you
-                                </li>
+                                <strong class="filter-title">Categories</strong>
+                                <ul class="list-unstyled">
+                                    <li class="ptb15">
+                                        Curated for you
+                                    </li>
+                                    <li class="ptb15">
+                                        Academic Books
+                                    </li>
+                                    <li class="ptb15">
+                                        Critically acclaimed
+                                    </li>
+                                    <li class="ptb15">
+                                        Curated for you
+                                    </li>
 
-                            </ul>
-                        </div>
-                        <div class="mb15 filter-categories">
+                                </ul>
+                            </div>
+                            <div class="mb15 filter-categories">
 
-                            <strong class="filter-title">Categories</strong>
-                            <ul class="list-unstyled">
-                                <li class="ptb15">
-                                    Curated for you
-                                </li>
-                                <li class="ptb15">
-                                    Academic Books
-                                </li>
-                                <li class="ptb15">
-                                    Critically acclaimed
-                                </li>
-                                <li class="ptb15">
-                                    Curated for you
-                                </li>
+                                <strong class="filter-title">Categories</strong>
+                                <ul class="list-unstyled">
+                                    <li class="ptb15">
+                                        Curated for you
+                                    </li>
+                                    <li class="ptb15">
+                                        Academic Books
+                                    </li>
+                                    <li class="ptb15">
+                                        Critically acclaimed
+                                    </li>
+                                    <li class="ptb15">
+                                        Curated for you
+                                    </li>
 
-                            </ul>
+                                </ul>
+                            </div>
+                            </div>
                         </div>
 
                     </div>
@@ -286,17 +292,25 @@
 
                 </div>
 
+                <div class="drop-down-wrapper bottom-sheet">
+                    <div class="select-dropdown">
+                        <button id="sortBy" class="dropbtn">
+                            Sort by: Title
 
+                        </button>
+                        <div id="sortSheet" class="dropdown-content sheet-content">
+                          <div class="sheet">
+                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 1</a>
+                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 2</a>
+                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 3</a>
+                          </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-            <div class="position-absolute select-style">
-                <select class="sort-by">
-                    <option value="Title">Sort by: Title</option>
-                    <option value="Author">Sort by: Author</option>
-                    <option value="Recommended">Sort by: Recommended</option>
-                </select>
 
-
-            </div>
             <div class="col-md-9  pt50">
                 <div class="row">
                     <div class="mb15 col-12 col-sm-6 col-md-4 col-lg-3">
@@ -352,7 +366,9 @@
                             </div>
                             <div class="mb10 p-card-info">
                                 <div class="d-flex flex-column no-hover">
-                                    <strong class="mb15 p-card-title">Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix</strong>
+                                    <strong class="mb15 p-card-title">Rise Like a Phoenix Rise Like a Phoenix Rise Like
+                                        a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like
+                                        a Phoenix</strong>
                                     <span class="p-author">Pradip Chanda Pradip Chanda</span>
                                 </div>
                                 <div class="w-100 on-hover">
@@ -396,7 +412,9 @@
                             </div>
                             <div class="mb10 p-card-info">
                                 <div class="d-flex flex-column no-hover">
-                                    <strong class="mb15 p-card-title">Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix</strong>
+                                    <strong class="mb15 p-card-title">Rise Like a Phoenix Rise Like a Phoenix Rise Like
+                                        a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like
+                                        a Phoenix</strong>
                                     <span class="p-author">Pradip Chanda Pradip Chanda</span>
                                 </div>
                                 <div class="w-100 on-hover">
@@ -440,7 +458,9 @@
                             </div>
                             <div class="mb10 p-card-info">
                                 <div class="d-flex flex-column no-hover">
-                                    <strong class="mb15 p-card-title">Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix</strong>
+                                    <strong class="mb15 p-card-title">Rise Like a Phoenix Rise Like a Phoenix Rise Like
+                                        a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like a Phoenix Rise Like
+                                        a Phoenix</strong>
                                     <span class="p-author">Pradip Chanda Pradip Chanda</span>
                                 </div>
                                 <div class="w-100 on-hover">
