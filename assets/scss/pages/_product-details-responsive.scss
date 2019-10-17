@@ -1,0 +1,110 @@
+@media (max-width: 1200px) {
+  .product-section {
+    .product-info-wrap {
+      .offer-info {
+        font-size: 17px;
+      }
+      .product-title {
+        font-size: 30px;
+      }
+      .product-subtitle,
+      .rating-container .rating-info {
+        font-size: 18px;
+      }
+    }
+
+    .action-card {
+      .product-sharing {
+        .sharing-list {
+
+        }
+        .share-text {
+          display: block;
+        }
+        .list-item {
+
+        }
+      }
+      .action-card-inner {
+        padding-top: 20px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .mrp {
+          font-size: 28px;
+          line-height: 1.2;
+          margin-bottom: 10px;
+        }
+        .buy-now-price,
+        .offer-text {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        .cta-wrap .button {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .product-section {
+    .product-details-wrap {
+      margin-bottom: 30px;
+    }
+    .product-img-inner {
+      max-width: 360px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+
+    .product-info-wrap {
+      .offer-info {
+        font-size: 17px;
+        margin-top: 15px;
+      }
+      .product-title {
+        font-size: 30px;
+      }
+      .product-subtitle,
+      .rating-container .rating-info {
+        font-size: 18px;
+      }
+    }
+
+    .action-card {
+      .product-sharing {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        .sharing-list {
+          margin-bottom: 0;
+        }
+        .share-text {
+          display: inline-block;
+          margin-left: 0;
+        }
+        .list-item {
+
+        }
+      }
+
+      .action-card-inner {
+        padding-top: 15px;
+
+        .cta-wrap .button {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 20px;
+
+          span {
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+}

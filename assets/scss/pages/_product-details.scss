@@ -8,6 +8,91 @@
   margin-bottom: 18px;
 }
 
+.rating-stars {
+  //Color variables
+  --default-fill: #fff;
+  --default-outline: #d82e29;
+  --rated-fill: #d82e29;
+  --rated-outline: #d82e29;
+
+  //Sturcture variables
+  --default-rated-width: 155px;
+  --rated-fullwidth: 155px;
+  --star-width: 27px;
+  --star-height: 25px;
+
+  position: relative;
+  display: inline-block;
+
+  span, i {
+    display: inline-block;
+  }
+
+  .star {
+    font-size: 0;
+    float: left;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    svg {
+      display: inline-block;
+      width: var(--star-width);
+      height: var(--star-height);
+    }
+  }
+
+  .default-fill {
+    color: var(--default-fill);
+  }
+  .default-outline {
+    color: var(--default-outline);
+  }
+  .rated-fill {
+    color: var(--rated-fill);
+  }
+  .rated-outline {
+    color: var(--rated-outline);
+  }
+
+  .default, rated {
+    position: relative;
+  }
+
+  .default, .rated {
+    width: var(--default-rated-width);
+
+    .default-fill,
+    .default-outline,
+    .rated-fill,
+    .rated-outline {
+      font-size: 0;
+      position: absolute;
+    }
+  }
+
+  .rated {
+    width: var(--rated-fullwidth);
+    height: var(--star-height);
+    overflow: hidden;
+
+    .rated-value {
+      width: 50%;
+      height: inherit;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .rated-fill,
+    .rated-outline {
+      width: var(--rated-fullwidth);
+      overflow: hidden;
+      height: inherit;
+    }
+  }
+}
+
 .product-section {
 
   .product-details-wrap {
@@ -27,10 +112,11 @@
   }
 
   .product-info-wrap {
+    a {
+      text-decoration: underline;
+    }
     .product-info-inner {
-      a {
-        text-decoration: underline;
-      }
+
     }
     .product-title {
       font-weight: normal;
@@ -71,6 +157,11 @@
     }
     .read-more {
       color: #c4122f;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -81,10 +172,13 @@
 
       }
       .share-text {
-
+        font-size: 18px;
+        position: relative;
+        top: 2px;
       }
       .list-item {
-
+        margin-right: 5px;
+        margin-left: 5px;
       }
       .item-link {
 
@@ -110,7 +204,6 @@
           margin-bottom: 20px;
         }
       }
-
 
       .mrp {
         font-size: 30px;
@@ -143,6 +236,10 @@
             border-radius: 2px;
             font-size: 22px;
             text-transform: uppercase;
+          }
+
+          span {
+            margin-left: 6px;
           }
         }
 
@@ -181,7 +278,9 @@
 
 .about-author {
 
-
+  .text-content {
+    font-size: 15px;
+  }
 }
 
 .matching-combo {
