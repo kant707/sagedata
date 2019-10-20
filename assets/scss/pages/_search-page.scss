@@ -10,6 +10,12 @@
     box-shadow: 0 3px 6px 0 $light-grey;
     background-color: $white;
     height: 100%;
+    .product-img{
+        height: 227px;
+      img{
+        max-height: 100%;
+      }
+    }
 
     .p-card-title, .p-author {
       display: -webkit-box;
@@ -47,7 +53,7 @@
   .drop-down-wrapper {
     @media (min-width: 768px) {
       position: absolute;
-      right: -300%;
+      right: -496%;
       top:0;
       z-index: 1;
 
@@ -242,6 +248,12 @@
 
     li {
       font-weight: 500;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .product-img{
+      height: 150px;
     }
   }
 
