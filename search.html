@@ -220,32 +220,85 @@
             <div class="col-md-2 pt50 filter-bar">
 
                 <!-- Modal Structure -->
-                <div  class="bottom-sheet">
+                <div class="bottom-sheet">
                     <div class="">
                         <button id="filterBy" class="d-block d-md-none dropbtn">
                             Filter
                         </button>
-                        <div  id="filterSheet" class="sheet-content">
+                        <div id="filterSheet" class="sheet-content">
                             <div class="sheet">
-                            <div class="mb15 filter-categories">
+                                <div class="mb15 filter-categories">
 
-                                <strong class="filter-title">Categories</strong>
-                                <ul class="list-unstyled">
-                                    <li class="ptb15">
-                                        <a href="#">Curated for you</a>
-                                    </li>
-                                    <li class="ptb15">
-                                        <a href="#">Academic Books</a>
-                                    </li>
-                                    <li class="ptb15">
-                                        <a href="#">Critically acclaimed</a>
-                                    </li>
-                                    <li class="ptb15">
-                                        <a href="#">Curated for you</a>
-                                    </li>
+                                    <strong class="text-uppercase pb15 filter-title">Categories</strong>
+                                    <ul class="list-unstyled">
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="curated-b">
+                                            <label for="curated-b" class="m0 text-dark">Curated for you</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="winners-a">
+                                            <label for="winners-a" class="m0 text-dark">Award Winners</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="books-a">
+                                            <label for="books-a" class="m0 text-dark">Books of the Month</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="acclaimed-a">
+                                            <label for="acclaimed-a" class="m0 text-dark">Critically acclaimed</label>
+                                        </li>
 
-                                </ul>
-                            </div>
+
+                                    </ul>
+                                </div>
+                                <div class="mb15 filter-categories">
+
+                                    <strong class="text-uppercase pb15 filter-title">Subject</strong>
+                                    <ul class="list-unstyled">
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="curated-c">
+                                            <label for="curated-c" class="m0 text-dark">Curated for you</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="winners-b">
+                                            <label for="winners-b" class="m0 text-dark">Award Winners</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="books-b">
+                                            <label for="books-b" class="m0 text-dark">Books of the Month</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="acclaimed-b">
+                                            <label for="acclaimed-b" class="m0 text-dark">Critically acclaimed</label>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="mb15 filter-categories">
+
+                                    <strong class="text-uppercase pb15 filter-title">Offers</strong>
+                                    <ul class="list-unstyled">
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="curated-a">
+                                            <label for="curated-a" class="m0 text-dark">Curated for you</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="winners-c">
+                                            <label for="winners-c" class="m0 text-dark">Award Winners</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="books-c">
+                                            <label for="books-c" class="m0 text-dark">Books of the Month</label>
+                                        </li>
+                                        <li class="custom-input-wrap pb15">
+                                            <input class="d-none" type="checkbox" id="acclaimed-c">
+                                            <label for="acclaimed-c" class="m0 text-dark">Critically acclaimed</label>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
 
                             </div>
                         </div>
@@ -262,11 +315,21 @@
 
                         </button>
                         <div id="sortSheet" class="dropdown-content sheet-content">
-                          <div class="sheet">
-                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 1</a>
-                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 2</a>
-                              <a class="ptb10 prl15 text-decoration-none" href="#">Link 3</a>
-                          </div>
+                            <ul class="p0 m0 sheet">
+                                <li class="custom-input-wrap ptb10 prl15">
+                                    <input class="d-none" type="radio" id="byDate" name="sort-group">
+                                    <label for="byDate" class="m0 radio-label text-dark">Sort by date</label>
+                                </li>
+                                <li class="custom-input-wrap ptb10 prl15">
+                                    <input class="d-none" type="radio" id="byTitle" name="sort-group">
+                                    <label for="byTitle" class="m0 radio-label text-dark">Sort by title</label>
+                                </li>
+                                <li class="custom-input-wrap ptb10 prl15">
+                                    <input class="d-none" type="radio" id="byAuthor" name="sort-group">
+                                    <label for="byAuthor" class="m0 radio-label text-dark">Sort by author</label>
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
 
