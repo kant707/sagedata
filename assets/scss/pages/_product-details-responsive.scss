@@ -15,14 +15,8 @@
 
     .action-card {
       .product-sharing {
-        .sharing-list {
-
-        }
-        .share-text {
+        .sharing-text {
           display: block;
-        }
-        .list-item {
-
         }
       }
       .action-card-inner {
@@ -44,6 +38,15 @@
           font-size: 18px;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .product-section .action-card .action-card-inner {
+    .buy-now-price,
+    .offer-text {
+      font-size: 16px;
     }
   }
 }
@@ -76,23 +79,20 @@
 
     .action-card {
       .product-sharing {
-        padding-right: 20px;
-        padding-left: 20px;
 
         .sharing-list {
           margin-bottom: 0;
         }
-        .share-text {
+        .sharing-text {
           display: inline-block;
           margin-left: 0;
-        }
-        .list-item {
-
         }
       }
 
       .action-card-inner {
         padding-top: 15px;
+        padding-right: 0;
+        padding-left: 0;
 
         .cta-wrap .button {
           padding-top: 10px;

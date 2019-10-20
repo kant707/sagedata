@@ -5,21 +5,22 @@
 }
 .section-heading {
   font-size: 24px;
+  font-weight: bold;
   margin-bottom: 18px;
 }
 
 .rating-stars {
   //Color variables
-  --default-fill: #fff;
-  --default-outline: #d82e29;
-  --rated-fill: #d82e29;
-  --rated-outline: #d82e29;
+  $default-fill: #fff;
+  $default-outline: #d82e29;
+  $rated-fill: #d82e29;
+  $rated-outline: #d82e29;
 
   //Sturcture variables
-  --default-rated-width: 155px;
-  --rated-fullwidth: 155px;
-  --star-width: 27px;
-  --star-height: 25px;
+  $default-rated-width: 155px;
+  $rated-fullwidth: 155px;
+  $star-width: 27px;
+  $star-height: 25px;
 
   position: relative;
   display: inline-block;
@@ -38,22 +39,22 @@
     }
     svg {
       display: inline-block;
-      width: var(--star-width);
-      height: var(--star-height);
+      width: $star-width;
+      height: $star-height;
     }
   }
 
   .default-fill {
-    color: var(--default-fill);
+    color: $default-fill;
   }
   .default-outline {
-    color: var(--default-outline);
+    color: $default-outline;
   }
   .rated-fill {
-    color: var(--rated-fill);
+    color: $rated-fill;
   }
   .rated-outline {
-    color: var(--rated-outline);
+    color: $rated-outline;
   }
 
   .default, rated {
@@ -61,7 +62,7 @@
   }
 
   .default, .rated {
-    width: var(--default-rated-width);
+    width: $default-rated-width;
 
     .default-fill,
     .default-outline,
@@ -73,12 +74,12 @@
   }
 
   .rated {
-    width: var(--rated-fullwidth);
-    height: var(--star-height);
+    width: $rated-fullwidth;
+    height: $star-height;
     overflow: hidden;
 
     .rated-value {
-      width: 50%;
+      //width: 50%;
       height: inherit;
       position: relative;
       overflow: hidden;
@@ -86,7 +87,7 @@
 
     .rated-fill,
     .rated-outline {
-      width: var(--rated-fullwidth);
+      width: $rated-fullwidth;
       overflow: hidden;
       height: inherit;
     }
@@ -102,24 +103,15 @@
       padding-top: 10px;
     }
   }
-  .product-img-wrap {
-    .product-img-inner {
 
-    }
-    .product-img {
-
-    }
-  }
 
   .product-info-wrap {
     a {
       text-decoration: underline;
     }
-    .product-info-inner {
 
-    }
     .product-title {
-      font-weight: normal;
+      font-weight: bold;
     }
     .product-subtitle {
       color: rgba(0, 0, 0, .75);
@@ -127,9 +119,7 @@
       font-weight: normal;
     }
     .rating-container {
-      .rating-stars {
 
-      }
       .rating-info {
         font-size: 20px;
         color: #707070;
@@ -140,20 +130,16 @@
     .book-description {
       font-size: 15px;
     }
-    .author-info {
-      .author-name {
-
-      }
-    }
     .book-trace {
       color: #707070;
     }
     .book-description {
-
+      .read-more {
+        text-decoration: underline;
+      }
     }
     .offer-info {
       font-size: 20px;
-
     }
     .read-more {
       color: #c4122f;
@@ -168,10 +154,7 @@
   .action-card {
 
     .product-sharing {
-      .sharing-list {
-
-      }
-      .share-text {
+      .sharing-text {
         font-size: 18px;
         position: relative;
         top: 2px;
@@ -179,9 +162,6 @@
       .list-item {
         margin-right: 5px;
         margin-left: 5px;
-      }
-      .item-link {
-
       }
     }
 
@@ -211,10 +191,7 @@
 
       .buy-now-price,
       .offer-text {
-        font-size: 20px;
-      }
-      .buy-now-price {
-
+        font-size: 18px;
       }
       .offer-text {
         color: #26358c;
@@ -232,6 +209,7 @@
           border-radius: 10px;
 
           &.buy-now {
+            background: #d86629;
             background-image: linear-gradient(to bottom, #f57840, #d86629);
             border-radius: 2px;
             font-size: 22px;
@@ -240,6 +218,8 @@
 
           span {
             margin-left: 6px;
+            position: relative;
+            top: 2px;
           }
         }
 
@@ -263,15 +243,8 @@
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
           }
-          .buy-now {
-
-
-          }
         }
       }
-
-
-
     }
   }
 }
@@ -280,6 +253,10 @@
 
   .text-content {
     font-size: 15px;
+  }
+  .read-more {
+    color: #c4122f;
+    text-decoration: underline;
   }
 }
 
@@ -339,9 +316,6 @@
       margin-left: auto;
     }
   }
-
-
-
 }
 
 .editors-pick,
@@ -391,6 +365,7 @@
       }
     }
   }
+
   @media (max-width: 575px) {
     padding-right: 0;
     padding-left: 0;
