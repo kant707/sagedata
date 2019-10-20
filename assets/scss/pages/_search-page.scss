@@ -1,18 +1,21 @@
 
 .search-page {
 
-  .position-relative-web{
+  .position-relative-web {
     @media (min-width: 768px) {
       position: relative;
     }
   }
+
   .card {
     box-shadow: 0 3px 6px 0 $light-grey;
     background-color: $white;
     height: 100%;
-    .product-img{
-        height: 227px;
-      img{
+
+    .product-img {
+      height: 227px;
+
+      img {
         max-height: 100%;
       }
     }
@@ -54,67 +57,65 @@
     @media (min-width: 768px) {
       position: absolute;
       right: -496%;
-      top:0;
+      top: 0;
       z-index: 1;
 
-       .select-dropdown{
-         position: relative;
-         display: inline-block;
+      .select-dropdown {
+        position: relative;
+        display: inline-block;
 
-         .dropdown-content {
-           display: none;
-           position: absolute;
-           left:0;
-           right:0;
-           top: 30px;
-           margin: 0 auto;
-           background-color: $white;
-           min-width: 160px;
-           border: 1px solid $grey1;
-           z-index: 1;
-           a {
-             font-size: 12px;
-             display: block;
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 30px;
+          margin: 0 auto;
+          background-color: $white;
+          min-width: 160px;
+          border: 1px solid $grey1;
+          z-index: 1;
 
-             &:focus {
-               outline: none;
-             }
-           }
-
-           a:hover {
-             background-color: $light-grey
-           }
-         }
-
-         .dropbtn {
-           display: flex;
-           cursor: pointer;
-           font-size: 14px;
-           padding: 5px 30px 5px 20px;
-           background-color: $white;
-           border: 1px solid $grey-cc;
-           border-radius: 2px;
-           background: url(../images/icons/arrow-down.svg) no-repeat 92% center;
-           background-size: 10px 10px;
-         }
-
-         .dropbtn, a {
-           color: $regular-text;
-         }
-         &:hover{
-            .dropbtn {
-             border-color: $grey1
-           }
-           .dropdown-content {
-             display: block;
+          li {
+            font-size: 12px;
+            display: block;
+            &:hover {
+              background-color: $light-grey
+            }
+          }
 
 
-           }
-         }
+        }
 
-       }
+        .dropbtn {
+          display: flex;
+          cursor: pointer;
+          font-size: 14px;
+          padding: 5px 30px 5px 20px;
+          background-color: $white;
+          border: 1px solid $grey-cc;
+          border-radius: 2px;
+          background: url(../images/icons/arrow-down.svg) no-repeat 92% center;
+          background-size: 10px 10px;
+        }
+
+        .dropbtn, li {
+          color: $regular-text;
+        }
+
+        &:hover {
+          .dropbtn {
+            border-color: $grey1
+          }
+
+          .dropdown-content {
+            display: block;
 
 
+          }
+        }
+
+      }
 
 
     }
@@ -167,7 +168,7 @@
       display: flex;
       position: fixed;
       bottom: 0;
-      z-index: 1;
+      z-index: 102;
       left: 0;
       right: 0;
       width: 100%;
@@ -175,12 +176,13 @@
 
       .bottom-sheet {
         width: 50%;
-        position:relative;
-        &:first-child{
-          .dropbtn{
-            &:after{
+        position: relative;
+
+        &:first-child {
+          .dropbtn {
+            &:after {
               content: '';
-              background-color:  $grey-cc;
+              background-color: $grey-cc;
               height: 50px;
               width: 1px;
               position: absolute;
@@ -193,17 +195,17 @@
 
       }
 
-      .dropbtn{
+      .dropbtn {
         width: 100%;
-        height:50px;
+        height: 50px;
         background-color: $white;
-        border:0;
+        border: 0;
         border-top: 1px solid $grey-cc;
         bottom: 0;
         position: absolute;
 
       }
-      .sheet-content{
+      .sheet-content {
         display: none;
         overflow: hidden;
         position: fixed;
@@ -213,9 +215,10 @@
         right: 0;
         left: 0;
         margin: 0 auto;
-        background-color:rgba(0,0,0,0.1);
-        &.dropdown-content{
-          a{
+        background-color: rgba(0, 0, 0, 0.1);
+
+        &.dropdown-content {
+          li {
             display: block;
             padding: 10px 0;
             color: $regular-text;
@@ -223,7 +226,7 @@
         }
       }
 
-      .sheet{
+      .sheet {
         padding: 15px;
         overflow-y: auto;
         background-color: $white;
@@ -235,8 +238,6 @@
       }
 
 
-
-
     }
   }
 
@@ -244,6 +245,7 @@
     .filter-title {
       font-size: 18px;
       color: $blue;
+      display: inline-block;
     }
 
     li {
@@ -252,8 +254,76 @@
   }
 
   @media (max-width: 767px) {
-    .product-img{
+    .product-img {
       height: 150px;
+    }
+
+    .custom-input-wrap {
+      input[type='checkbox'] {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        cursor: pointer;
+      }
+
+      label {
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+          content: '';
+          -webkit-appearance: none;
+          background-color: transparent;
+          border: 1px solid $red-light;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          padding: 8px;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 5px;
+          top: -2px;
+        }
+      }
+      input:checked + label:after{
+        content: '';
+        display: block;
+        position: absolute;
+
+      }
+      input[type='checkbox']:checked + label:after {
+        top: 2px;
+        left: 7px;
+        width: 4px;
+        height: 10px;
+        transform: rotate(45deg);
+        border: solid $red-light;
+        border-width: 0 1px 1px 0;
+      }
+
+      .radio-label:before{
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+      }
+
+      input[type='radio']:checked + label:before {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+
+      }
+
+      input[type='radio']:checked + label:after {
+        width: 8px;
+        height: 8px;
+        left: 5px;
+        right: 0;
+        top: 3px;
+        background-color: $red-light;
+        border-radius: 50%;
+      }
     }
   }
 
@@ -261,9 +331,9 @@
 }
 
 @media (max-width: 767px) {
-//    add in body
+  //    add in body
 
-  .fixed-scroll{
+  .fixed-scroll {
     position: fixed;
     overflow: hidden;
   }
