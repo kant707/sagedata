@@ -8459,6 +8459,8 @@ Example media query - to hide Offcanvas on screen widths above 768px.
     max-width: 172px;
     padding-top: 0;
     padding-bottom: 0; }
+    .main-header .brand-logo svg {
+      width: 100%; }
   .main-header .action-list {
     margin-top: 10px;
     margin-bottom: 0;
@@ -8526,7 +8528,10 @@ Example media query - to hide Offcanvas on screen widths above 768px.
         left: 4px;
         top: -10px; }
     .main-header .top-menu a {
-      color: #191515; }
+      color: #191515;
+      transition: color ease-in-out 300ms; }
+      .main-header .top-menu a:hover {
+        color: #c4122f !important; }
   .main-header .bottom-menu {
     border-top: 2px dashed #707070;
     border-bottom: 2px dashed #707070;
@@ -8537,7 +8542,10 @@ Example media query - to hide Offcanvas on screen widths above 768px.
         padding: 10px; }
     .main-header .bottom-menu a {
       font-size: 15px;
-      color: #000; }
+      color: #000;
+      transition: color ease-in-out 300ms; }
+      .main-header .bottom-menu a:hover {
+        color: #c4122f !important; }
     .main-header .bottom-menu span {
       padding-top: 5px; }
   .main-header #multiple-menu-tabs {
@@ -8788,5 +8796,43 @@ body.offcanvas-open {
 
   #multiple-menu-tab {
     display: none; } }
+.main-breadcrumb .breadcrumb-list {
+  color: #3d3d3d;
+  font-weight: 500;
+  margin-bottom: 0; }
+.main-breadcrumb .list-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px; }
+  .main-breadcrumb .list-item:first-child {
+    padding-left: 5px; }
+    .main-breadcrumb .list-item:first-child:before {
+      display: none; }
+  .main-breadcrumb .list-item:last-child .item-link {
+    opacity: .5;
+    cursor: default; }
+    .main-breadcrumb .list-item:last-child .item-link:hover {
+      color: inherit;
+      text-decoration: none; }
+  .main-breadcrumb .list-item:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 8px;
+    width: 8px;
+    border-style: solid;
+    border-color: #999;
+    border-width: 0 1px 1px 0;
+    transform: translateY(-50%) rotate(-45deg); }
+.main-breadcrumb .item-link {
+  color: inherit;
+  position: relative;
+  top: 2px;
+  transition: color ease-in-out 300ms; }
+  .main-breadcrumb .item-link:hover {
+    color: #c4122f;
+    text-decoration: none; }
 
 /*# sourceMappingURL=common.css.map */
