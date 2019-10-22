@@ -185,12 +185,12 @@ $(document).ready(function(){
     });
 
 
-    $('#filterSheet').on('click', function(){
+    $('#filterSheet, #filterClose').on('click', function(){
       $('#filterSheet').slideToggle(200);
       $('body').removeClass('fixed-scroll');
     });
     //
-    $('#sortSheet').on('click', function(){
+    $('#sortSheet, #sortingClose').on('click', function(){
       $('#sortSheet').slideToggle(200);
       $('body').removeClass('fixed-scroll');
     });

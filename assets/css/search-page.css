@@ -891,7 +891,7 @@ a:focus {
     position: relative;
     display: inline-block; }
     .search-page .drop-down-wrapper .select-dropdown:hover .dropbtn {
-      border-color: #707070; }
+      border-color: #adadad; }
     .search-page .drop-down-wrapper .select-dropdown:hover .dropdown-content {
       display: block; }
     .search-page .drop-down-wrapper .select-dropdown .dropdown-content {
@@ -915,11 +915,13 @@ a:focus {
       cursor: pointer;
       font-size: 14px;
       padding: 6px 30px 2px 15px;
-      background-color: #fff;
       border: 1px solid #ccc;
       border-radius: 2px;
-      background: url(../images/icons/arrow-down.svg) no-repeat 92% center;
+      background: #ededed url(../images/icons/arrow-down.svg) no-repeat 92% center;
       background-size: 10px 10px; }
+      .search-page .drop-down-wrapper .select-dropdown .dropbtn .sorting-value {
+        font-weight: bold;
+        margin-left: 5px; }
     .search-page .drop-down-wrapper .select-dropdown .dropbtn, .search-page .drop-down-wrapper .select-dropdown li {
       color: #191515; } }
 .search-page .p-card-info button {
@@ -1009,11 +1011,26 @@ a:focus {
       bottom: 50px;
       left: 0;
       right: 0; }
+      .search-page .filter-bar .sheet .sheet-close {
+        position: fixed;
+        bottom: 62vh;
+        border: none;
+        background: none;
+        font-size: 24px;
+        line-height: 1;
+        right: 10px;
+        padding: 2px;
+        height: 24px;
+        width: 24px;
+        z-index: 2; }
       .search-page .filter-bar .sheet.sort-by-sheet {
         margin-bottom: 0;
         padding-bottom: 15px; }
+        .search-page .filter-bar .sheet.sort-by-sheet .sheet-close {
+          bottom: 30vh; }
       .search-page .filter-bar .sheet .filter-actions {
         background: #fff;
+        border-top: 2px solid #fff;
         padding: 0 15px 15px;
         text-align: right;
         position: fixed;
@@ -1054,7 +1071,7 @@ a:focus {
     position: relative;
     vertical-align: middle;
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 8px;
     top: -2px; }
 .search-page .filter-categories.price-filter .custom-input-wrap input:checked + label:after {
   content: '';
@@ -1134,7 +1151,7 @@ a:focus {
       position: relative;
       vertical-align: middle;
       cursor: pointer;
-      margin-right: 5px;
+      margin-right: 8px;
       top: -2px; }
   .search-page .custom-input-wrap input:checked + label:after {
     content: '';

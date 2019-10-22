@@ -222,7 +222,10 @@
                 Filter
               </button>
               <div id="filterSheet" class="sheet-content">
-                <div class="sheet">
+                <div class="sheet filter-by-sheet">
+                  <button type="button" id="filterClose" class="d-block d-md-none sheet-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>close</title><path fill="#3F414D" d="M1.319 0L0 1.319 6.681 8 0 14.681 1.319 16 8 9.319 14.681 16 16 14.681 9.319 8 16 1.319 14.681 0 8 6.681z"></path></svg>
+                  </button>
                   <div class="d-block d-md-none filter-actions">
                     <button type="button" class="clear-all-btn">Clear all</button>
                     <button type="button" class="apply-btn">Apply</button>
@@ -304,10 +307,13 @@
           <div class="drop-down-wrapper bottom-sheet">
             <div class="select-dropdown">
               <button id="sortBy" class="dropbtn">
-                Sort by: Title
+                Sort by: <span class="sorting-value">Title</span>
               </button>
               <div id="sortSheet" class="dropdown-content sheet-content">
                 <ul class="p0 m0 sheet sort-by-sheet">
+                  <button type="button" id="sortingClose" class="d-block d-md-none sheet-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>close</title><path fill="#3F414D" d="M1.319 0L0 1.319 6.681 8 0 14.681 1.319 16 8 9.319 14.681 16 16 14.681 9.319 8 16 1.319 14.681 0 8 6.681z"></path></svg>
+                  </button>
                   <li class="custom-input-wrap ptb10 prl15">
                     <input class="d-none" type="radio" id="byDate" name="sort-group">
                     <label for="byDate" class="m0 radio-label text-dark">Sort by date</label>
@@ -331,7 +337,7 @@
             <div class="mb30 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
               <div class="p15 card">
                 <a href="" class="product-wrap-link">
-                  <div class="d-flex align-items-center  justify-content-center mb10 product-img">
+                  <div class="d-flex align-items-center  justify-content-center mb15 product-img">
                     <img class="img-fluid" alt="product" src="assets/images/product-lg-img.png">
                   </div>
                   <div class="mb10 p-card-info">
@@ -377,8 +383,8 @@
             <div class="mb30 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
               <div class="p15 card">
                 <a href="" class="product-wrap-link">
-                  <div class="d-flex align-items-center  justify-content-center mb10 product-img">
-                    <img class="img-fluid" alt="product" src="assets/images/product-lg-img.png">
+                  <div class="d-flex align-items-center  justify-content-center mb15 product-img">
+                    <img class="img-fluid" alt="product" src="assets/images/9789353286026_f_l.jpg">
                   </div>
                   <div class="mb10 p-card-info">
                     <div class="d-flex flex-column no-hover">
@@ -423,8 +429,8 @@
             <div class="mb30 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
               <div class="p15 card">
                 <a href="" class="product-wrap-link">
-                  <div class="d-flex align-items-center  justify-content-center mb10 product-img">
-                    <img class="img-fluid" alt="product" src="assets/images/product-lg-img.png">
+                  <div class="d-flex align-items-center  justify-content-center mb15 product-img">
+                    <img class="img-fluid" alt="product" src="assets/images/9789353286026_f.jpg">
                   </div>
                   <div class="mb10 p-card-info">
                     <div class="d-flex flex-column no-hover">
@@ -469,7 +475,7 @@
             <div class="mb30 col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
               <div class="p15 card">
                 <a href="" class="product-wrap-link">
-                  <div class="d-flex align-items-center  justify-content-center mb10 product-img">
+                  <div class="d-flex align-items-center  justify-content-center mb15 product-img">
                     <img class="img-fluid" alt="product" src="assets/images/product-lg-img.png">
                   </div>
                   <div class="mb10 p-card-info">
