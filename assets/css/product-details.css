@@ -993,7 +993,10 @@ a:focus {
         border-bottom-left-radius: 0; } }
 
 .about-author .text-content {
-  font-size: 15px; }
+  font-size: 15px;
+  margin-bottom: 15px; }
+  .about-author .text-content:last-child {
+    margin-bottom: 30px; }
 .about-author .read-more {
   color: #c4122f; }
 
