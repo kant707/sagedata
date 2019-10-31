@@ -992,11 +992,33 @@ a:focus {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0; } }
 
+.about-author .author-review-tabs .nav-item {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px; }
+  @media (max-width: 575px) {
+    .about-author .author-review-tabs .nav-item .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem; } }
+  .about-author .author-review-tabs .nav-item .nav-link {
+    color: inherit; }
+  .about-author .author-review-tabs .nav-item .active {
+    background: #344293;
+    color: #fff; }
+.about-author .author-review-tab-content .tab-pane {
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-right: 0;
+  padding-left: 0; }
+.about-author .author-review-tab-content .strong {
+  font-weight: bold; }
+.about-author .author-review-tab-content .review-content-wrap {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  padding-bottom: 10px; }
 .about-author .text-content {
   font-size: 15px;
   margin-bottom: 15px; }
-  .about-author .text-content:last-child {
-    margin-bottom: 30px; }
 .about-author .read-more {
   color: #c4122f; }
 
