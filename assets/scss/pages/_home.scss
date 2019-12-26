@@ -44,11 +44,14 @@
   border-bottom: 2px dashed rgba(112, 112, 112, 0.5);
 
   .top-books-carousel {
-
-    .book-banner-link {
-      display: inline-block;
+    .slick-list { // Updated
       margin-right: 10px;
       margin-left: 10px;
+    }
+    .book-banner-link {
+      display: inline-block;
+      // padding-right: 10px; // Updated
+      // padding-left: 10px; // Updated
     }
     .slick-arrow {
       width: 32px;

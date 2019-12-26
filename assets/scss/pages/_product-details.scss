@@ -362,7 +362,10 @@
 
   .customer-choice-carousel,
   .editors-pick-carousel {
-
+    .slick-list { // Updated
+      margin-right: 10px;
+      margin-left: 10px;
+    }
     .book-banner-link {
       display: inline-block;
       margin-right: 10px;

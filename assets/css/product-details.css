@@ -1060,6 +1060,12 @@ a:focus {
     margin-right: auto;
     margin-left: auto; } }
 
+.editors-pick .customer-choice-carousel .slick-list,
+.editors-pick .editors-pick-carousel .slick-list,
+.customer-choice .customer-choice-carousel .slick-list,
+.customer-choice .editors-pick-carousel .slick-list {
+  margin-right: 10px;
+  margin-left: 10px; }
 .editors-pick .customer-choice-carousel .book-banner-link,
 .editors-pick .editors-pick-carousel .book-banner-link,
 .customer-choice .customer-choice-carousel .book-banner-link,

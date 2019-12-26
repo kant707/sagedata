@@ -864,10 +864,11 @@ a:focus {
 
 .top-books {
   border-bottom: 2px dashed rgba(112, 112, 112, 0.5); }
-  .top-books .top-books-carousel .book-banner-link {
-    display: inline-block;
+  .top-books .top-books-carousel .slick-list {
     margin-right: 10px;
     margin-left: 10px; }
+  .top-books .top-books-carousel .book-banner-link {
+    display: inline-block; }
   .top-books .top-books-carousel .slick-arrow {
     width: 32px;
     height: 32px; }
